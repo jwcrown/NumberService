@@ -3,16 +3,24 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { AlphaComponent } from './alpha/alpha.component';
+import { BetaComponent } from './beta/beta.component';
+
+import { DataService } from './data.service';
+import { OmegaComponent } from './omega/omega.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AlphaComponent,
+    BetaComponent,
+    OmegaComponent
   ],
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
